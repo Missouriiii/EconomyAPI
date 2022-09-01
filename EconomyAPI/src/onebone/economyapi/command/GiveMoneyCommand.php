@@ -47,7 +47,7 @@ class GiveMoneyCommand extends Command{
 			$sender->sendMessage($this->plugin->getMessage("givemoney-gave-money", [$amount, $player], $sender->getName()));
 
 			if($p instanceof Player){
-				$p->sendMessage($this->plugin->getMessage("givemoney-money-given", [$amount], $sender->getName()));
+				$p->sendMessage($this->plugin->getMessage("§l§2»§r§a You have collected §e%MONETARY_UNIT%%1', [$amount], $sender->getName()));
 			}
 			break;
 			case EconomyAPI::RET_CANCELLED:
